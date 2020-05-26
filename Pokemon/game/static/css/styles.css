@@ -1,0 +1,42 @@
+.fixed-rectangle
+{
+    background-color: lightblue;
+    width: 40%;
+    height: 500px;
+
+    /* rounded corners */
+    min-height: 200px;
+    border-radius: 10px;
+
+    position: fixed;
+
+    left: 30%;
+}
+
+@media (max-width: 500px)
+{
+  .fixed-rectangle
+  {
+    /* Temporary here. Using this to test thigns out. */
+    background-color: red;
+
+    width: 60%;
+    height: 500px;
+
+    /* rounded corners */
+    min-height: 200px;
+    border-radius: 10px;
+
+    position: fixed;
+
+    left: 20%;
+  }
+}
+
+/* Image itself. */
+.imageContent
+{
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
