@@ -15,7 +15,7 @@ posts = [
         "title"  : "Post 2",
         "content": "Second post",
         "date"   : "April 5, 2020"
-    }
+    },
 ]
 
 def randomPokemonImage():
@@ -24,14 +24,15 @@ def randomPokemonImage():
     return image_number
 
 def home(request):
-    context = {
-        "posts" : posts
-    }
-
     # randomPokemonImage() is a callable function which will result in an error as it will return a value.
     # Therefore, calling function by its name only.
     pokemon_image_number = randomPokemonImage
     full_pokemon_file = str(pokemon_image_number) + ".png"
+
+    context = {
+        "posts" : posts,
+        "image_file": full_pokemon_file,
+    }
 
     # Load Template that we included from settings.py
     return (render(request, "game/game.html", context))

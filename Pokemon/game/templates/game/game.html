@@ -1,15 +1,14 @@
 {% extends "game/base.html" %}
+{% load static %}
 
 {% block content %}
     {% for post in posts %}
         <h1>{{ post.title }}</h1>
         <p>By {{ post.author }} on {{ post.date}} </p>
         <p>{{ post.content }}</p>
-    {% endfor %}
+    {% endfor post %}
 
     <div class="fixed-rectangle">
-        {% comment %} <div class="imageContent">
-
-        </div> {% endcomment %}
+        <img class="image_center" src="{% static "sprites/493.png" %}" alt="Not working"> </img>
     </div>
 {% endblock content %}
