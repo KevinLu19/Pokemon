@@ -12,6 +12,8 @@
 
     left: 30%;
     padding: 40px;
+
+    margin-top: 10%;
 }
 
 .image_center
@@ -22,6 +24,64 @@
   margin-top: auto;
   margin-bottom: auto;
   width: 40%;
+}
+
+.submit_answer
+{
+  margin-top: 40%;
+  margin-bottom: auto;
+
+  width: 37%;
+  right: 32%;
+
+  position: fixed;
+}
+
+footer {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  /* background-color: #333333; */
+  background-color: white;
+}
+
+p.copyright {
+  position: absolute;
+  width: 100%;
+  color: black;
+  /* line-height: 40px; */
+  font-size: 0.9em;
+  text-align: center;
+  text-shadow: black;
+  font-weight: bold;
+  bottom:0;
+}
+
+p.my_github
+{
+  position: absolute;
+  width: 100%;
+  color: black;
+  line-height: 110px;
+  font-size: 0.9em;
+  text-align: center;
+  text-shadow: black;
+  font-weight: bold;
+  bottom:0;
+}
+
+p.other_copyright
+{
+  position: absolute;
+  width: 100%;
+  color: black;
+  line-height: 52px;
+  font-size: 0.9em;
+  text-align: center;
+  text-shadow: black;
+  font-weight: bold;
+  bottom:0;
 }
 
 @media(max-width: 1500px)
