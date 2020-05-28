@@ -1,10 +1,15 @@
 __pycache__/
 *.py[cod]
 *$py.class
-.vscode/*
+
+.vscode/
 *./vscode/*
-windENV/*
-*/windENV/*
+
+# Virtual ENV
+windENV/
+.windENV
+venv/
+.venv
 
 # C extensions
 *.so
